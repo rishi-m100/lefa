@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    min-height: 12vh;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-links{
+  margin-top:30px;
+  margin-right:100px;
+  display:flex;
+  float:right;
+}
+
+.nav-links li {
+    list-style: none;
+    padding-right:40px;
+}
+
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 12px;
+    
+}
+
+.nav-logo{
+  height:70px;
+  width:70px;
+  margin-left:200px;
+ margin-bottom:-.3%;
+}
+
+</style>
+<body>
+  <div id="navbar123">
+ <nav id="#nav">
+    <span class="logo">
+            <a href="index.html"><img class="nav-logo" src="lefa_logo.png" ></a>
+        </span>
+        <ul class="nav-links">
+            <li><a id="this" class="nav-link" href="index.html">HOME</a></li>
+            <li><a class="nav-link" href="aboutus.html">PRACTICE AREAS</a></li>
+            <li><a class="nav-link" href="zero-to-infinity.html">OUR VISION</a></li>
+            <li><a class="nav-link" href="team.html">TEAM</a></li>
+            <li><a class="nav-link" href="support.html">CONTACT</a></li>
+        </ul>
+        <div id="burger-nav" class="burger">
+            <!--<button id="burger-button">click here</button>-->
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+  </div>
+    </nav>
+
+</body>
+<script>
+  const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li');
+
+    
+
+
+    burger.addEventListener('click', () => {
+        //toggle nav
+    
+        nav.classList.toggle('nav-active');
+      
+
+        //Animate Links
+        navLinks.forEach((link, index) => {
+            if (link.style.animation){
+                link.style.animation = '';
+            }
+            else {
+                link.style.animation = link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0.5}s`
+            }
+        });
+        //Burger Animation
+        burger.classList.toggle('cool');
+        changeStyle();
+      
+    });
+
+}
+navSlide();
+
+
+var changeStyles = 0;
+function changeStyle() {
+//function defination
+var el = document.getElementById('burger-nav');
+if (el.classList.contains("cool")){
+
+changeStyles = 1;
+}
+else {
+  changeStyles = 0;
+}
+
+}
+</script>
+</html>
