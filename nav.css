@@ -5,6 +5,10 @@
     
 }
 
+#body-stuff{
+  background-color:red;
+}
+
 nav {
     min-height: 12vh;
     background-color: white;

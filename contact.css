@@ -11,7 +11,7 @@ margin-bottom:100px;
   float: left;
   min-height: 700px;
   max-width: 600px;
-  background-color: rgba(26, 33, 54, 0.7);
+  background-color: rgba(6, 38, 34, 0.7);
   padding-top: 10%;
   padding-right: 5%;
   padding-left: 15%;
@@ -24,7 +24,7 @@ margin-bottom:100px;
 
 .parallax {
   /* The image used */
-  background-image: url("https://s.yimg.com/hd/cp-video-transcode/prod/2020-10/14/5f860a6863753c2439abc32d/5f871e4906c4ef239688745f_o_U_v3.jpg");
+  background-image: url("contact-header2.svg");
 
   /* Set a specific height */
   min-height: 700px; 
@@ -77,3 +77,109 @@ margin-bottom:100px;
   .bullet-sub{
     font-weight:bolder;
   }
+
+  #contact-main{
+    width: 1000px;
+    height: auto;
+    padding: 5%;
+  background-color: rgba(6, 38, 34, 0.7);
+    border-radius: 50px 50px;
+  }
+
+#name-label{
+margin: 3%;
+height: 50px;
+width: 500px;
+border-radius: 50px 50px;
+outline: none;
+border: none;
+text-align: center;
+} 
+
+#mail-label{
+margin: 3%;
+height: 50px;
+width: 500px;
+border-radius: 50px 50px;
+outline: none;
+border: none;
+text-align: center;
+}
+
+#subject-label{
+margin: 3%;
+height: 50px;
+width: 500px;
+border-radius: 50px 50px;
+outline: none;
+border: none;
+text-align: center;
+}
+
+#text-label{
+margin: 3%;
+width: 500px;
+outline: none;
+border: none;
+text-align: center;
+}
+
+#submit-label{
+margin: 3%;
+height: 50px;
+width: 500px;
+border-radius: 50px 50px;
+outline: none;
+border: none;
+text-align: center;
+color: white;
+cursor: pointer;
+transition: background-color 0.6s ease;
+background-color: black;
+}
+#submit-label:hover{
+  color: black;
+  background-color: white;
+}
+#email a{
+  	color:  #f0f0f0;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  #contact-main{
+    margin: 40px;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #contact-main{
+    width: auto;
+    height: auto;
+  }
+
+  #name-label, #mail-label, #subject-label, #submit-label{
+    height: 100px;
+    width: 300px;
+  }
+ #text-label{
+    height: 200px;
+    width: 300px;
+ }
+}
+
+@media only screen and (max-width: 450px) {
+  #contact-main{
+    padding: 5%;
+  }
+  #name-label, #mail-label, #subject-label, #submit-label{
+    height: 50px;
+    width: 200px;
+  }
+ #text-label{
+    height: 300px;
+    width: 200px;
+ }
+}
+

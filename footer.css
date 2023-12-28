@@ -12,6 +12,8 @@
 footer{
   position: relative;
   bottom:0;
+  height: auto;
+  box-shadow: 0px 0 50px gray;
 }
 
 @media (max-height:800px){
@@ -21,13 +23,13 @@ footer{
 
 
 .footer-distributed{
-	background-color: rgba(26, 54, 47, 0.7);
+	background-color: rgba(26, 28, 38, 1);
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 50px 50px 60px 50px;
-	margin-top: 80px;
+	
 }
 
 .footer-distributed .footer-left,
@@ -40,12 +42,13 @@ footer{
 /* Footer left */
 
 .footer-distributed .footer-left{
-	width: 30%;
+	width: 70%;
 }
 
 .footer-distributed h3{
 	color:  #f0f0f0;
 	margin: 0;
+  font-size: 40px;
 }
 
 /* The company logo */
@@ -62,7 +65,7 @@ footer{
 
 .footer-distributed .footer-links{
 	color:  #ffffff;
-	margin: 30px 0 12px;
+	margin: 20px 0 12px;
 }
 
 .footer-distributed .footer-links a{
@@ -83,12 +86,12 @@ footer{
 /* Footer Center */
 
 .footer-distributed .footer-center{
-	width: 39%;
+	width: 0%;
 }
 
 
 .footer-distributed .footer-center i{
-	background-color:  rgba(26, 54, 47, 0.7);;
+	background-color:  #f0f0f0;
 	color: #ffffff;
 	font-size: 25px;
 	width: 38px;
@@ -124,7 +127,9 @@ footer{
 /* Footer Right */
 
 .footer-distributed .footer-right{
-	width: 30%;
+  padding: 2%;
+	width: 17%;
+  border: 1px solid white;
 }
 
 .footer-distributed .footer-company-about{
@@ -152,14 +157,12 @@ footer{
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color: rgba(26, 54, 47, 0.7);;
+	background-color: rgba(26, 28, 38, 1);
 	border-radius: 2px;
-
 	font-size: 20px;
 	color: #f0f0f0;
 	text-align: center;
 	line-height: 35px;
-
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
@@ -183,18 +186,51 @@ footer{
 		margin-left: 0;
 	}
 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  white;
+  font-size: 13px;
 }
 
-@media (max-width: 450px) {
-  #email {
-    font-size: 13px;
-    padding: 0px !important;
-  }
 
 }
-@media (max-width: 404px) {
-  #email {
-    font-size: 11px;
-    padding: 0px !important;
+
+@media only screen and (max-width: 963px) {
+  .footer-distributed h3{
+    font-size: 30px;
   }
+  .footer-distributed .footer-links a{
+        font-size: 19px;
+  }
+}
+
+@media only screen and (max-width: 748px) {
+  .footer-distributed h3{
+    font-size: 25px;
+  }
+  .footer-distributed .footer-links a{
+        font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+    .footer-distributed .footer-links2 a{
+      font-size: 19px;
+    }
+      .footer-distributed .footer-links{
+        display:show;
+      }
+}
+
+@media only screen and (max-width: 360px) {
+  #email{
+    font-size: 15px;
+  }
+}
+
+#email a{
+  color:  #f0f0f0;
+  text-decoration: none;
 }

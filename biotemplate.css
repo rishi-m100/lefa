@@ -1,0 +1,102 @@
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.image img {
+  height: 350px;
+}
+
+
+hr{
+  margin-bottom:200px;
+  height:3px;
+  border-width:0;
+  background-color:black;
+}
+
+.image {
+margin-left:40px;
+margin-top:-150px;
+margin-right:50px;
+height: 800px;
+}
+
+
+.text {
+  font-size: 20px;
+  margin-top:-800px;
+  width:57%;
+margin-left:40%;
+
+}
+.title-description{
+  font-size:25px;
+}
+#third{
+   
+  }
+
+.titlestuff {
+  font-weight: bolder;
+  font-size: 30px;
+}
+footer{
+  margin-top:30px;
+}
+@media only screen and (max-width: 1125px){
+.text{
+  width:50%;
+  margin-left:47%;
+
+}
+}
+@media only screen and (max-width: 900px){
+  
+  .container{
+    display: unset;
+    margin:none;
+  }
+  .text{
+   margin:0;
+   text-align:center;
+   width:80%;
+   margin-left:10%;
+   margin-right:10%;
+  }
+  #elias-text{
+    margin-top:-250px;
+  }
+  .image{
+ 
+    text-align: center;
+    margin-left:10%;
+    margin-right:10%;
+      
+  }
+ 
+}
+
+@media only screen and (max-width: 460px){
+  .image img{
+   width:100%;
+   height: auto;
+  }
+  .image{
+    margin-left:none;
+    margin-right:none;
+  }
+
+  .text{ 
+    margin-top: -400px;
+  }
+  
+
+}
+
+#elias{
+  width: 355px;
+  height: auto;
+}

@@ -4,45 +4,55 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>repl.it</title>
+	<title>Home</title>
+	<link rel="icon" type="image/png" href="favicon.png" sizes="64x64" />
 	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="footer.css" rel="stylesheet" type="text/css" />
 	<!--<link href="footer.css" rel="stylesheet" type="text/css" />-->
 	<link href="test.css" rel="stylesheet" type="text/css" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<script src="/path/to/lib/jquery.waypoints.min.js">
+	</script>
+	<script src="/path/to/shortcuts/inview.min.js">
+	</script>
+	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-search-pseudo-elements>
+
+	</script>
+
 </head>
 
 <body>
-	<nav>
-		<span class="logo">
+<div id="all">
+		<nav id="nav">
+			<span class="logo">
             <img class="nav-logo" src="lefa_logo2.png">
         </span>
         <ul class="ani">
             <li class="menu">
                 <a class="normal-nav" href="index.html">Home</a></li>
             <li id="menu-toggle" class="menu" class="menu-title">
-                <a class="menu-title">Practice Areas</a>
+                <a class="menu-title">Opportunities</a>
                 <ul id="ani-toggle" class="ani-menu">
-                    <li><a href="speaker-seris.html" class="width-1">Speaker Series</a></li>
-                    <li><a href="experience.html" class="width-1">Experience</a></li>
-                    <li><a href="webinar.html" class="width-1">Webinars and Workshops</a></li>
+                    <li><a href="speaker-series.html" class="width-1">Speaker Series</a></li>
+                    <li><a href="competitions.html" class="width-1">Competitions</a></li>
                 </ul>
             </li>
-            <li id="menu-toggle2" class="menu">
-                <a class="menu-title">Competitions</a>
-                <ul id="ani-toggle2" class="ani-menu">
-                    <li><a href="college-competitions.html" class="width-2">College</a></li>
-                    <li><a href="national-college.html" class="width-2">National</a></li>
-                </ul>
+
+               <li id="menu-toggle2" class="menu">
+                <a class="normal-nav" href="create.html">Start Your Own Chapter</a></li>
             </li>
-            <li id="menu-toggle3" class="menu">
+
+                       <li id="menu-toggle3" class="menu">
                 <a class="menu-title">About Us</a>
                 <ul id="ani-toggle3" class="ani-menu">
                     <li><a href="team.html" class="width-3">Meet the Team</a></li>
                     <li><a href="resources.html" class="width-3">Resources</a></li>
                 </ul>
             </li>
-            <li class="menu"><a class="normal-nav" href="contact.html">Contact</a></li>
+           
+
+            <li class="menu"><a class="normal-nav" href="contact.php">Contact</a></li>
         </ul>
             <div id="burger-nav" class="burger">
                 <!--<button id="burger-button">click here</button>-->
@@ -53,154 +63,374 @@
     </nav>
 
 
-<div id="filter">
-<h1 id="filter-title">Leaders of Economics & Finance in America</h1>
-<br>
-<br>
-<h2 id="filter-text">Spreading literacy, education, resources, & opportunities in economics and finance to all</h2>
-</div>
-
-<div class="parallax">
- 
-</div>
-<div>
-
-
-
-<div class="slideshow-container">
-
-<div class="mySlides">
-  <div class="numbertext">1 / 8</div>
-  <img class="slideshow-pic" src="http://1.bp.blogspot.com/-1uQRYMklACU/ToQ6aL-5uUI/AAAAAAAAAgQ/9_u0922cL14/s1600/cute-puppy-dog-wallpapers.jpg">
-</div>
-
-<div class="mySlides">
-  <div class="numbertext">2 / 8</div>
-  <img class="slideshow-pic" src="https://weneedfun.com/wp-content/uploads/2015/10/Cute-puppy-Pictures-29.jpg">
-</div>
-
-<div class="mySlides">
-  <div class="numbertext">3 / 8</div>
-  <img class="slideshow-pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Labrador_Retriever_portrait.jpg/1200px-Labrador_Retriever_portrait.jpg">
-</div>
-
-<div class="mySlides">
-  <div class="numbertext">4 / 8</div>
-  <img class="slideshow-pic" src="https://i.ytimg.com/vi/xtmfe3K8We0/maxresdefault.jpg">
-</div>
-
-<div class="mySlides">
-  <div class="numbertext">5 / 8</div>
-  <img class="slideshow-pic" src="https://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/full/public/2017/11/15/dog.jpg">
-</div>
-
-<div class="mySlides">
-  <div class="numbertext">6 / 8</div>
-  <img class="slideshow-pic" src="https://media4.s-nbcnews.com/i/newscms/2016_49/1180068/charlie-todaypuppy-tease-today-161207_6e639034adc3d8b3d34719de85389cda.jpg">
-</div>
-
-<div class="mySlides">
-  <div class="numbertext">7 / 8</div>
-  <img class="slideshow-pic" src="https://www.petpaw.com.au/wp-content/uploads/2014/06/Pug-4.jpg">
-</div>
-
-<div class="mySlides">
-  <div class="numbertext">8 / 8</div>
-  <img class="slideshow-pic" src="https://i.insider.com/521cd2136bb3f7df4c7c0a06">
-</div>
-<a class="left" onclick="plusSlides(-1)">&#10094;</a>
-<a class="right" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-  <span class="dot" onclick="currentSlide(6)"></span>
-  <span class="dot" onclick="currentSlide(7)"></span>
-  <span class="dot" onclick="currentSlide(8)"></span>
-</div>
-
-
-<div id="primary-div">
-
-<div id="left">
-
-
-<p id="primary">Upcoming Events</p>
-
-
-</div>
-
-<div id="right">
-
-
-
-<ul class="right_bullet">
-
-
-  <ul class="bullet-div">
-  <li class="bullets"><p>Suv Talks About How He Is Being Replaced</p></li>
-  <p class="bullet-info">blah blah blah blah blah blah blah blah blahblah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-  <li class="bullets"><p>Suv's Replacement Talks ABout Future Goals<p></li>
-  <p class="bullet-info">blah blah blah blah blah blah blah blah blahblah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-  </ul>
-</div>
+  <div id="filter">
+  <h1 id="filter-title">Leaders of Economics & Finance in America</h1>
+  <br>
+  <br>
+  <h2 id="filter-text">Spreading literacy, education, resources, & opportunities in economics and finance to all</h2>
   </div>
 
-<footer class="footer-distributed">
+  <div class="parallax">
+  
+  </div>
 
-    			<div class="footer-left">
-    				<h3>Leaders of Economics & Finance in America</span></h3>
+  <div id="pathway">
+
+    <img id="rand_img" src="img1_1.png">
+
+  <div id="right_pathway">
+    <h2>
+  What Does Your Financial Pathway Look Like?
+      </h2>
+
+      <p>According to a survey conducted by Standard and Poor's Rating Services, over <span class="grayed">43%</span> of Americans are financially illiterate; placing the country in <span class="grayed">14th</span> place of the global financial literacy rankings or the <span class="grayed">last</span> among the 'first-world' countries. Are you prepared for the long road ahead? Find out how you can be engaged in our numerous opportunities!</p>
 <br>
 <br>
+  <button class="opp" onclick="window.location.href='competitions.html'">Competitions</button>
+  <button class="opp" onclick="window.location.href='speaker-series.html'">Speaker Series</button>
+  </div>
 
-    				<p class="footer-links">
-    					<a href="index.html">Home | </a>
-    					
-    					<a href="aboutus.html">Team | </a>
-    					
-    					<a href="zero-to-infinity.html">Competitions | </a>
-    					
-    					<a href="events.html">Events | </a>
-              
-    					<a href="support.html">Contacts</a>
-    				</p>
-            <center>
-            <p class="footer-links2">
-    					<a href="index.html">Home</a>
-    					
-    					<a href="aboutus.html">Team</a>
-    					
-    					<a href="zero-to-infinity.html">Competitions</a>
-    					
-    					<a href="events.html">Events</a>
-              
-    					<a href="support.html">Contacts</a>
-    				</p>
-</center>
-    			</div>
-<br>
-<br>
-<br>
-    			<div class="footer-center">
+  </div>
+
+  <div id="primary-div">
+
+  <div id="left">
 
 
-    			
-    			</div>
-    			<div class="footer-right">
-    				<p class="footer-company-about">
-    					<span id="email"><a href ="mailto:campaignzerotoinfinty2020@gmail.com" target="_blank">lefaorganization@gmail.com</a></span>
-    					</p>
+  <p id="primary">Upcoming Events</p>
 
-    			</div>
-    		</footer>
+
+  </div>
+
+
+
+
+  <div id="right">
+
+
+
+  <ul class="right_bullet">
+
+
+    <ul class="bullet-div">
+    <li class="bullets"><p>Club Interest Meeting</p></li>
+    <p class="bullet-info">Want to explore more in-depth topics and collaborate with like-minded individuals? Join our interest meeting to learn how you can be involved in LEFA at your respective school! Don't have a chapter at your school? Check out the "Start Your Own Chapter" page to find out more! </p>
+    <li class="bullets"><p>TBD<p></li>
+    <p class="bullet-info">tbd</p>
+    <li class="bullets"><p>TBD</p></li>
+    <p class="bullet-info">tbd</p>
+    <li class="bullets"><p>TBD<p></li>
+    <p class="bullet-info">tbd</p>
+    
+    </ul>
+    </ul>
+  </div>
+    </div>
+
+
+  <div id="did_know">
+  <h1 style="font-size:50px;">Did You Know?</h1>
+
+  <p>As the world's greatest nation, the United States' performance ​in financial literacy among its rivaling developed countries is extremely poor and devastating to realize. Here are some of the most <span class="grayed">mind-boggling</span> statistics about American financial literacy:</p>
+
+  <center>
+  <span id="left_stat" class="stat">
+  <h1 id='value1' style="font-size: 78px;">0</h1>
+  <h5>PERCENT</h5>
+  <hr class="did_know_line">
+  <p>of Americans were recorded <span class="grayed">jobless</span> due to the COVID-19 pandemic</p>
+  </span>
+
+  <span id="middle_stat" class="stat">
+  <h1 id='value2' style="font-size: 78px;">0</h1>
+  <h5>PERCENT</h5>
+  <hr class="did_know_line">
+  <p>of high school students want more <span class="grayed">financial</span> education</p>
+  </span>
+
+  <span id="right_stat" class="stat">
+  <h1 id='value3' style="font-size: 78px;">0</h1>
+  <h5>PERCENT</h5>
+  <hr class="did_know_line">
+  <p>of parents are <span class="grayed">worried</span> about their child’s ability to manage money</p>
+  </span>
+  </center>
+
+
+    </div>
+
+
+  <div id="brag">
+
+  <div id="left_brag">
+    <h1> Our Team Has Some Achievements
+  (but we're not bragging) </h1>
+
+  <p> With our experienced leadership team, reliable resources, and widespread audience, LEFA became a prominent organization in the fields of economics, finance, and business throughout its one year of operation. Find out how you can join our community of like-minded students in the Washington D.C. metropolitan area.</p>
+  ​<br>
+  <p>
+  ​ &ZeroWidthSpace; &ZeroWidthSpace; &ZeroWidthSpace; &ZeroWidthSpace; Contact us or start your own chapter today!
+  </p>
+  <button class="opp2" onclick="window.location.href='create.html'">Start Your Own Chapter</button>
+
+  </div>
+
+  <center>
+  <span class="yes">
+
+    <div style="padding:5%;display:table;margin-top:-40px;">
+    <span id="right_brag">
+  <h1 id="value4" style="font-size:80px;">0</h1>
+  <h6>SPEAKERS</h6>
+    </span>
+    <span id="right_brag">
+  <h1 id="value5" style="font-size:80px;">0</h1>
+  <h6>ENGAGED MEMEBERS</h6>
+  </span>
+  </div>  
+
+    <div style="padding:5%;display:table;margin-top:-40px;">
+    <span id="right_brag">
+      <h1 id="value6" style="font-size:80px;">0</h1>
+      <h6>CHAPTERS</h6>
+      </span>
+      <span id="right_brag">
+        <h1 id="value7" style="font-size:80px;">0</h1>
+        <h6>TEAM MEMBERS</h6>
+        </span>
+        </div>
+
+    </span>
+  </center>
+    </div>
+
+
+
+  <div id="slideshow-box">
+  <div class="slideshow-container">
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 23</div>
+    <img class="slideshow-pic" src="i-felt-that-pretty-much-most-if-not-all-of-the-information-applies-to-one-s-future-in-regards-to-personal-finance-and-business-as-an-occupation_orig.png">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 23</div>
+    <img class="slideshow-pic" src="i-felt-that-pretty-much-most-if-not-all-of-the-information-applies-to-one-s-future-in-regards-to-personal-finance-and-business-as-an-occupation-1_orig.png">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 23</div>
+    <img class="slideshow-pic" src="i-felt-that-pretty-much-most-if-not-all-of-the-information-applies-to-one-s-future-in-regards-to-personal-finance-and-business-as-an-occupation-2_orig.png">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 23</div>
+    <img class="slideshow-pic" src="i-felt-that-pretty-much-most-if-not-all-of-the-information-applies-to-one-s-future-in-regards-to-personal-finance-and-business-as-an-occupation-3_orig.png">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 23</div>
+    <img class="slideshow-pic" src="i-felt-that-pretty-much-most-if-not-all-of-the-information-applies-to-one-s-future-in-regards-to-personal-finance-and-business-as-an-occupation-4_orig.png">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 23</div>
+    <img class="slideshow-pic" src="i-felt-that-pretty-much-most-if-not-all-of-the-information-applies-to-one-s-future-in-regards-to-personal-finance-and-business-as-an-occupation-5_orig.png">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 23</div>
+    <img class="slideshow-pic" src="i-felt-that-pretty-much-most-if-not-all-of-the-information-applies-to-one-s-future-in-regards-to-personal-finance-and-business-as-an-occupation-6_orig.png">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">8 / 23</div>
+    <img class="slideshow-pic" src="i-felt-that-pretty-much-most-if-not-all-of-the-information-applies-to-one-s-future-in-regards-to-personal-finance-and-business-as-an-occupation-7_orig.png">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">9 / 23</div>
+    <img class="slideshow-pic" src="i-felt-that-pretty-much-most-if-not-all-of-the-information-applies-to-one-s-future-in-regards-to-personal-finance-and-business-as-an-occupation-8_orig.png">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">10 / 23</div>
+    <img class="slideshow-pic" src="i-felt-that-pretty-much-most-if-not-all-of-the-information-applies-to-one-s-future-in-regards-to-personal-finance-and-business-as-an-occupation-9_orig.png">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">11 / 23</div>
+    <img class="slideshow-pic" src="i-felt-that-pretty-much-most-if-not-all-of-the-information-applies-to-one-s-future-in-regards-to-personal-finance-and-business-as-an-occupation-12_orig.png">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">12 / 23</div>
+    <img class="slideshow-pic" src="i-felt-that-pretty-much-most-if-not-all-of-the-information-applies-to-one-s-future-in-regards-to-personal-finance-and-business-as-an-occupation-13_orig.png">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">13 / 23</div>
+    <img class="slideshow-pic" src="i-felt-that-pretty-much-most-if-not-all-of-the-information-applies-to-one-s-future-in-regards-to-personal-finance-and-business-as-an-occupation-14_orig.png">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">14 / 23</div>
+    <img class="slideshow-pic" src="i-felt-that-pretty-much-most-if-not-all-of-the-information-applies-to-one-s-future-in-regards-to-personal-finance-and-business-as-an-occupation-15_orig.png">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">15 / 23</div>
+    <img class="slideshow-pic" src="i-felt-that-pretty-much-most-if-not-all-of-the-information-applies-to-one-s-future-in-regards-to-personal-finance-and-business-as-an-occupation-16_orig.png">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">16 / 23</div>
+    <img class="slideshow-pic" src="i-felt-that-pretty-much-most-if-not-all-of-the-information-applies-to-one-s-future-in-regards-to-personal-finance-and-business-as-an-occupation-17_orig.png">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">17 / 23</div>
+    <img class="slideshow-pic" src="i-felt-that-pretty-much-most-if-not-all-of-the-information-applies-to-one-s-future-in-regards-to-personal-finance-and-business-as-an-occupation-18_orig.png">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">18 / 23</div>
+    <img class="slideshow-pic" src="i-felt-that-pretty-much-most-if-not-all-of-the-information-applies-to-one-s-future-in-regards-to-personal-finance-and-business-as-an-occupation-19_orig.png">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">19 / 23</div>
+    <img class="slideshow-pic" src="i-felt-that-pretty-much-most-if-not-all-of-the-information-applies-to-one-s-future-in-regards-to-personal-finance-and-business-as-an-occupation-20_orig.png">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">20 / 23</div>
+    <img class="slideshow-pic" src="i-felt-that-pretty-much-most-if-not-all-of-the-information-applies-to-one-s-future-in-regards-to-personal-finance-and-business-as-an-occupation-21_orig.png">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">21 / 23</div>
+    <img class="slideshow-pic" src="i-felt-that-pretty-much-most-if-not-all-of-the-information-applies-to-one-s-future-in-regards-to-personal-finance-and-business-as-an-occupation-22_orig.png">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">22 / 23</div>
+    <img class="slideshow-pic" src="i-felt-that-pretty-much-most-if-not-all-of-the-information-applies-to-one-s-future-in-regards-to-personal-finance-and-business-as-an-occupation-23_orig.png">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">23 / 23</div>
+    <img class="slideshow-pic" src="i-felt-that-pretty-much-most-if-not-all-of-the-information-applies-to-one-s-future-in-regards-to-personal-finance-and-business-as-an-occupation-24_orig.png">
+  </div>
+  <a class="left" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="right" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+    <span class="dot" onclick="currentSlide(11)"></span>
+    <span class="dot" onclick="currentSlide(12)"></span>
+    <span class="dot" onclick="currentSlide(13)"></span>
+    <span class="dot" onclick="currentSlide(14)"></span>
+    <span class="dot" onclick="currentSlide(15)"></span>
+    <span class="dot" onclick="currentSlide(16)"></span>
+    <span class="dot" onclick="currentSlide(17)"></span>
+    <span class="dot" onclick="currentSlide(18)"></span>
+    <span class="dot" onclick="currentSlide(19)"></span>
+    <span class="dot" onclick="currentSlide(20)"></span>
+    <span class="dot" onclick="currentSlide(21)"></span>
+    <span class="dot" onclick="currentSlide(22)"></span>
+    <span class="dot" onclick="currentSlide(23)"></span>
+    </div>
+    </div>
+
+
+
+
+
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+          <h3>Leaders of Economics and Finance in America</h3>
+
+          <p class="footer-links">
+            <a href="index.html">Home</a>
+            |
+            <a href="college-competitions.html">Competitions</a>
+            |
+            <a href="create.html">Start a Chapter</a>
+            |
+            <a href="team.html">Team</a>
+            |
+            <a href="contact.php">Contact</a>
+          </p>
+          <br>
+          <div>
+            <p id="email">
+            <i class="fa fa-envelope" style="color: #f0f0f0;"></i>
+            <a href ="mailto:lefaorganization@gmail.com" target="_blank">lefaorganization@gmail.com</a></p>
+          </div>
+          <br>
+          <br>
+  <code>
+          <p class="footer-company-name">© 2021 LEFA</p>
+          </code>
+        </div>
+
+        <div class="footer-center">
+
+
+        
+        </div>
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>LEFA</span>
+            Ellicott City, Maryland, United States</p>
+          <div class="footer-icons">
+            <a href="https://www.instagram.com/lefaorg/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/lefa-organization-51aa60210/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UCRXNzEPsJE0PNzJpbp0h7VA" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/LEFA-Organization-103955925208987" target="_blank"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+
+<div>
   </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   <!--
     <li class="bullets"><a href="speaker-seris.html" class="bullet_text">Speaker Series</a>
   </li>
@@ -262,6 +492,7 @@
   </li>
     -->
   <script src="script.js"></script>
+   <script src="nav.js"></script>
   <script>
 
 

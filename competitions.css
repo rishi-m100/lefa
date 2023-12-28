@@ -1,0 +1,274 @@
+* {
+  font-family: "poppins"
+}
+#body-stuff{
+ margin-top:75px;
+margin-bottom:100px;
+}
+.title{
+  margin-top:20px;
+  text-align:center;
+  font-size:45px;
+  font-weight:bold;
+  margin-bottom:30px;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ color:#2b5a4e;
+}
+
+@media only screen and (max-width: 990px) {
+  .title{
+    margin-left:0px;
+    text-align: center;
+  }
+  .text{
+    margin-right: 75px;
+  }
+  .text p{
+    font-size: 20px;
+  }
+
+}
+
+@media only screen and (max-width:575px) {
+  .title {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width:475px) {
+  .text p{
+    font-size: 15px;
+  }
+   .text{
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+
+@media only screen and (max-width:450px) {
+  .title {
+    font-size: 27.5px;
+  }
+}
+
+@media only screen and (max-width:350px) {
+  .title {
+    font-size: 23px;
+  }
+}
+
+
+#competitions{
+background-color: #37504a;
+margin-top: 700px;
+height:500px;
+padding: 2%;
+font-size: 35px;
+font-family: Arial, Helvetica, sans-serif;
+color: #F0F0F0
+}
+.comp-title{
+font-size:28px;
+margin-bottom:30px;
+}
+
+.comp-title2{
+font-size:23.5px;
+margin-bottom:30px;
+}
+.competitions_title{
+  padding: 3%;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #F0F0F0;
+}
+
+.competitions_buttons{
+
+border: none;
+background-color: #1a362f;
+color:white;
+padding: 5%;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#harvard{
+  width: 100px;
+  height: 100px;
+border-radius: 50%;
+ border: 2px solid black;
+ margin-top:6.5%;
+  margin-bottom:2%;
+}
+
+#stanford{
+  width: 100px;
+  height: 100px;
+border-radius: 50%;
+ border: 2px solid black;
+ margin-top:6.5%;
+  margin-bottom:2%;
+}
+#ithaca{
+  width: 100px;
+  height: 100px;
+border-radius: 50%;
+ border: 2px solid black;
+margin-top:6.5%;
+  margin-bottom:2%;
+}
+
+.left_block, .middle_block, .right_block{
+  color: white;
+  font-size: 12px;
+  all: none; 
+  width: 400px;
+  margin: 2%;
+  height: 700px;
+  border: 2px solid black;
+  background-color: #1a2136;
+  border-radius: 30px 30px;
+  padding-bottom: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
+  display: inline-table;
+}
+
+@media only screen and (max-width: 440px) {
+  .left_block, .middle_block, .right_block{
+    width:90vw;
+  }
+}
+
+
+
+.left_block2, .middle_block2, .right_block2{
+  color: white;
+  font-size: 12px;
+  all: none; 
+  width: 400px;
+  margin: 2%;
+  height: 700px;
+  border: 2px solid black;
+  background-color: #1a2136;
+  border-radius: 30px 30px;
+  padding-bottom: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
+  display: inline-table;
+}
+
+@media only screen and (min-width:1400px){
+  .left_block2,.middle_block2, .right_block2{
+    height: 750px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .left_block2, .middle_block2, .right_block2{
+    width:90vw;
+    height:750px;
+  }
+}
+
+.register{
+  top: 80px;
+  position: relative;
+  font-size: 20px;
+  background-color: white;
+  color: #1a2136;
+  transition: background-color 0.6s ease;
+  height: 40px;
+  width: 200px;
+  outline: none;
+  border: none;
+}
+
+.register:hover{
+  background-color: #37504a;
+  color: white;
+}
+
+.vl {
+  border-left: 6px solid black;
+  height: 1100px;
+  position: relative;
+  left: 100px;
+  margin-left: 30%;
+  margin-top: 100px;
+}
+
+
+
+.parallax {
+  /* The image used */
+  background-image: url("https://industrywired.com/wp-content/uploads/2020/07/Data-Types.jpeg");
+
+  /* Set a specific height */
+  min-height: 700px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 540px) {
+  
+
+  .right_block_text{
+    padding: 4%;
+  }
+
+}
+
+
+
+
+
+#filter{
+  float: left;
+  min-height: 700px;
+  max-width: 600px;
+  background-color: rgba(26, 33, 54, 0.7);
+  padding-top: 10%;
+  padding-right: 5%;
+  padding-left: 15%;
+  color:white;
+}
+
+@media only screen and (max-width: 900px) {
+  #filter{
+    padding-top: 160px;
+  }
+}
+@media only screen and (max-width: 445px) {
+  #filter{
+    padding-top: 110px;
+  }
+}
+
+
+#filter-title, #filter-text{
+  text-align: left;
+
+ 
+}
+
+#total-filter{
+  margin-top:25%;
+}
+
+#email a{
+  	color:  #f0f0f0;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:340px){
+#econbowl_link{
+  font-size:11px;
+}
+}
+
