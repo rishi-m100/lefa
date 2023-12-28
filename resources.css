@@ -4,7 +4,22 @@
 
 #body-stuff{
 margin-top:75px;
-margin-bottom:100px;
+margin-bottom:50px;
+}
+
+#practiceSub{
+  margin-left: 95px;
+  font-size: 28px;
+}
+
+.slideshow-24{
+  display: inline-grid;
+}
+
+@media only screen and (max-width: 650px){
+  .slideshow-24{
+  width: 90vw;
+}
 }
 
 #filter{
@@ -21,10 +36,9 @@ margin-bottom:100px;
 #filter-title{
   margin-bottom:50px;
 }
-
 .parallax {
   /* The image used */
-  background-image: url("https://s.yimg.com/hd/cp-video-transcode/prod/2020-10/14/5f860a6863753c2439abc32d/5f871e4906c4ef239688745f_o_U_v3.jpg");
+  background-image: url("os.svg");
 
   /* Set a specific height */
   min-height: 700px; 
@@ -35,24 +49,68 @@ margin-bottom:100px;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.title{
+.intro-par{
+  margin-left:450px;
+  font-size:25px;
+  line-height:30px;
+  font-family: poppins;
+  margin-right:150px;
+}
+
+.first-bullets{
+  list-style-type: square;
+  font-family: poppins;
+ font-size:20px;
+ line-height:30px;
+text-align: center;
+margin:5%;
+}
+.first-bullet-div{
+  
   margin-top:20px;
-   margin-left: 75px;
+  margin-right:50px;
+  
+}
+
+.first-bullets::marker{ 
+  color:blanchedalmond;
+  font-size: 30px; 
+  
+  }
+  .past-title{
+ 
+  }
+  .title{
+  margin-top:35px;
+
+ text-align: center;
   font-size:30px;
   line-height:30px;
   font-weight:bold;
   margin-bottom:30px;
  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color:#2b5a4e;
+ color:#2b5a4e;
 }
-
+.text{
+  
+  margin-left:150px;
+  font-size:20px;
+  line-height:30px;
+  font-family: poppins;
+  margin-right:150px;
+}
+  #title-two{
+    font-size:50px;
+  margin-top:50px;
+  margin-bottom:30px;
+}
 .bullets{
   list-style-type: square;
   font-family: poppins;
  font-size:25px;
 }
 .bullet-div{
-  margin-left: 125px;
+  margin-left:10vw;
   margin-top:20px;
   margin-right:50px;
 }
@@ -61,20 +119,74 @@ margin-bottom:100px;
   margin-bottom:20px;
   width:500px;
   font-family: poppins;
+  font-size:18px;
 }
+
+.practice-topic{
+  width: 40vw;
+  length: 350px;
+  float: right;
+  margin-right: 100px;
+  margin-top: 25px;
+}
+
+.practice-topic2{
+  width: 40vw;
+  length: 400px;
+  float: right;
+  margin-right: 100px;
+  margin-top: 75px;
+}
+
+@media only screen and (max-width: 1350px){
+  .practice-topic,.practice-topic2{
+    width:30vw;
+  }
+}
+
+@media only screen and (max-width: 1125px){
+  .practice-topic,.practice-topic2{
+    float:none;
+    display: block;
+    margin-left: auto;
+  margin-right: auto;
+  width: 60vw;
+  }
+}
+
+
 .bullets::marker{ 
   color:blanchedalmond;
   font-size: 30px; 
   }
-  .bullets-two{
-    margin-left:50px;
-    list-style-type: circle;
-  font-family: poppins;
-  font-size: 20px;
-   margin-top:10px;
-    margin-bottom:10px;
+
+
+.bullets2{
+font-family: poppins;
+ font-size:25px;
+}
+
+.bullets2::marker{ 
+  color:blanchedalmond;
+  font-size: 30px; 
   }
 
-  .bullet-sub{
-    font-weight:bolder;
+
+  #email a{
+  	color:  #f0f0f0;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .bullet-div{
+    margin-left:100px;
+    margin-top: 20px;
+    margin-right: 100px;
+    text-align: center;
   }
+  .bullet-info{
+    width: unset;
+    text-align: center;
+  }
+}
+

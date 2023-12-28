@@ -4,14 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Our Team</title>
+    <link rel="icon" type="image/png" href="favicon.png" sizes="64x64"/>
+    <link href="footer.css" rel="stylesheet" type="text/css" />
     <link href="team.css" rel="stylesheet" type="text/css" />
     <link href="test.css" rel="stylesheet" type="text/css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="https://genfavicon.com/tmp/icon_c8c05c778372aa211a87bd49c1fb118c.ico" />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+
+	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-search-pseudo-elements>
+  </script>
 
   </head>
   <body>
-     <nav>
+  <nav id="nav">
         <span class="logo">
             <img class="nav-logo" src="lefa_logo2.png">
         </span>
@@ -19,28 +26,27 @@
             <li class="menu">
                 <a class="normal-nav" href="index.html">Home</a></li>
             <li id="menu-toggle" class="menu" class="menu-title">
-                <a class="menu-title">Practice Areas</a>
+                <a class="menu-title">Opportunities</a>
                 <ul id="ani-toggle" class="ani-menu">
-                    <li><a href="speaker-seris.html" class="width-1">Speaker Series</a></li>
-                    <li><a href="experience.html" class="width-1">Experience</a></li>
-                    <li><a href="webinar.html" class="width-1">Webinars and Workshops</a></li>
+                    <li><a href="speaker-series.html" class="width-1">Speaker Series</a></li>
+                    <li><a href="competitions.html" class="width-1">Competitions</a></li>
                 </ul>
             </li>
-            <li id="menu-toggle2" class="menu">
-                <a class="menu-title">Competitions</a>
-                <ul id="ani-toggle2" class="ani-menu">
-                    <li><a href="college-competitions.html" class="width-2">College</a></li>
-                    <li><a href="national-college.html" class="width-2">National</a></li>
-                </ul>
+
+               <li id="menu-toggle2" class="menu">
+                <a class="normal-nav" href="create.html">Start Your Own Chapter</a></li>
             </li>
-            <li id="menu-toggle3" class="menu">
+
+                       <li id="menu-toggle3" class="menu">
                 <a class="menu-title">About Us</a>
                 <ul id="ani-toggle3" class="ani-menu">
                     <li><a href="team.html" class="width-3">Meet the Team</a></li>
                     <li><a href="resources.html" class="width-3">Resources</a></li>
                 </ul>
             </li>
-            <li class="menu"><a class="normal-nav" href="contact.html">Contact</a></li>
+           
+
+            <li class="menu"><a class="normal-nav" href="contact.php">Contact</a></li>
         </ul>
             <div id="burger-nav" class="burger">
                 <!--<button id="burger-button">click here</button>-->
@@ -53,88 +59,358 @@
 <div id="team">
 <br>
 
-<h1><center>Meet The Team</center></h1>
+<h1><center>Meet the Team</center></h1>
 </div>
-<div id="people">
-<div id="person1" class="circle">
-  <img id="image1" class="images" src="LucasYang.jpg">
-<p class="img__description">
-  Tel: 123-456-7890<br>info@mysite.com</p>
-<p class="about-text">
-<center> Lucas Yang<br>Co-Founder & Co-President </center>
-</p>
-</div>
-<div id="person2" class="circle">
-  <img id="image2" class="images" src="RayanElias.jpg">
-<p class="img__description"></p>
-<p> <center> Rayan Elias
-  <br>
- Co-Founder & Co-President </center>
-</p>
-</div>
-<div id="person3" class="circle">
-  <img id="image3" class="images" src="HarmanRaheja.jpg">
-<p class="img__description"></p>
-<p> <center> Harman Raheja
-  <br>
-   Co-Founder & Chapter Director </center>
-</p>
-</div>
-<br>
-<div id="person4" class="circle">
-  <img id="image4" class="images" src="JasonMathew.jpg">
-<p class="img__description">
-<p> <center> Jason Mathew
-  <br>
-  Director of Outreach </center>
-</p>
-</div>
-<div id="person5" class="circle">
-  <img id="image5" class="images" src="DavidHuang.jpg">
-<p class="img__description"></p>
-<p> <center> David Huang
-  <br>
-  Director of Graphic Design </center>
-</p>
-</div>
-<div id="person6" class="circle">
-  <img id="image6" class="images" src="HannahFang.jpg">
-<p class="img__description" style="padding-top:40%"></p>
-<p> <center> Hannah Fang
-  <br>
-  Director of Curriculum </center>
-</p>
-</div>
-<br>
-<div id="person7" class="circle">
-  <img id="image7" class="images" src="RaaghavOm.jpg">
-<p class="img__description"></p>
-<p> <center> Raaghav Om 
-  <br>
-  Marketing </center>
-</p>
-</div>
-<div id="person8" class="circle">
-  <img id="image8" class="images" src="ArshrajSingh.jpg">
-<p class="img__description"></p>
-<p> <center> Arshraj Singh 
-  <br>
-  Marketing </center>
-</p>
-</div>
-<div id="person9" class="circle">
-  <img id="image9" class="images" src="PavaniNimmagadda.jpg">
-<p class="img__description"></p>
-<p> <center> Pavani Nimmagadda 
-  <br>
-  Marketing </center>
-</p>
-</div>
-</div>
+
+
+
+<center>
+
+<div id="total">
+
+        <div class="tab">
+            <button id="founders_tab" class="tablinks" onclick="openCity(event, 'Founders')">Founders</button>
+            <button id="directors_tab" class="tablinks" onclick="openCity(event, 'Directors')">Directors</button>
+            <!--
+            <button id="chapter_tab" class="tablinks" onclick="openCity(event, 'Chapter Directors')">Chapter Directors</button>
+            -->
+            <button id="marketing_tab" class="tablinks" onclick="openCity(event, 'Marketing')">Marketing</button>
+            <button id="web_tab" class="tablinks" onclick="openCity(event, 'Web')">Web Development</button>
+        </div>
+
+        <div id="Founders" class="tabcontent">
+            <div id="person1" class="circle">
+                <a href="lucasyang.html"><button class="images2"><img id="image1" class="images" src="LucasYang.webp"></button></a>
+               
+                <p class="img__description">
+                    Tel: 123-456-7890<br>info@mysite.com</p>
+
+                <p class="about-position-founders">
+                Co-Founder & Co-President     
+                </p>
+                <p class="about-text">
+                Lucas Yang   
+                </p>
+            </div>
+            <div id="person2" class="circle">
+                <a href="rayanelias.html"><button class="images2"><img id="image2" class="images" src="RayanElias.webp"></button></a>
+                
+                <p class="img__description"></p>
+
+                <p class="about-position-founders">
+                    Co-Founder & Co-President
+                </p>
+                <p class="about-text">
+                    Rayan Elias
+                </p>
+            </div>
+            <div id="person3" class="circle">
+                <a href="harmanraheja.html"><button class="images2"><img id="image3" class="images" src="HarmanRaheja.webp"></button></a>
+
+                <p class="img__description"></p>
+
+                <p class="about-position-founders">
+                    Co-Founder & Chapter Director
+                </p>
+                <p class="about-text">
+                    Harman Raheja
+                </p>
+            </div>
+        </div>
+
+        <div id="Directors" class="tabcontent">
+            <div id="person4" class="circle">
+                <a href="jasonmathew.html"><button class="images2"><img id="image4" class="images" src="JasonMathew.webp"></button></a>
+
+                <p class="img__description"></p>
+
+                <p class="about-position-directors">
+                    Director of Outreach
+                </p>
+                <p class="about-text">
+                    Jason Mathew
+                </p>
+            </div>
+            <div id="person5" class="circle">
+                <a href="davidhuang.html"><button class="images2"><img id="image5" class="images" src="DavidHuang.webp"></button></a>
+
+                <p class="img__description"></p>
+                
+                <p class="about-position-directors">
+                    Event Coordinator
+                </p>
+                <p class="about-text">
+                    David Huang
+                </p>
+            </div>
+      
+            <div id="person6" class="circle">
+              <!--Error with border radius (Hannah Feng [Resolved])-->
+                <a href="alexanderrauch.html"><button class="images2"><img id="image6" class="images" src="xanderpic2.png"></button></a>
+
+                <p class="img__description" ></p>
+
+                <p class="about-position-directors">
+                    Co-Director of Curriculum
+                </p>
+                <p class="about-text">
+                    Alexander Rauch
+                </p>
+            </div>
+            
+
+
+
+      <div id="person17" class="circle">
+                    <!--Error with border radius (Hannah Feng [Resolved])-->
+                      <a href="gordon.html"><button class="images2"><img id="image6" class="images" src="gordonpic.png"></button></a>
+
+                      <p class="img__description" ></p>
+
+                      <p class="about-position-directors">
+                          Co-Director of Curriculum
+                      </p>
+                      <p class="about-text">
+                          Gordon Mei
+                      </p>
+                  </div>
+
+
+
+            <div id="person10" class="circle">
+                <a href="anujalamasety.html"><button class="images2"><img id="image7" class="images" src="anujpic2.png"></button></a>
+
+                <p class="img__description"></p>
+
+                <p class="about-position-directors">
+                    Director of Treasury
+                </p>
+                <p class="about-text">
+                Anuj Alamasety                
+            </p>
+            </div>
+
+            <div id="person11" class="circle">
+                <a href="nadiniwagle.html"><button class="images2"><img id="image8" class="images" src="nandinipic2.png"></button></a>
+
+                <p class="img__description"></p>
+
+                <p class="about-position-directors">
+                    Director of Graphic Design
+                </p>
+                <p class="about-text">
+                    Nandini Wagle
+                </p>
+            </div>
+        </div>
+
+<!--
+        <div id="Chapter Directors" class="tabcontent">
+        <div id="person3" class="circle">
+            <a href="harmanraheja.html"><button class="images2"><img id="image3" class="images" src="HarmanRaheja.webp"></button></a>
+
+            <p class="img__description"></p>
+
+            <p class="about-position-chapter">
+                Co-Founder & Chapter Director
+            </p>
+            <p class="about-text">
+                Harman Raheja
+            </p>
+
+        </div>
+        </div>
+-->
+        <div id="Marketing" class="tabcontent">
+            <div id="person7" class="circle">
+                <a href="raaghavom.html"><button class="images2"><img id="image7" class="images" src="RaaghavOm.webp"></button></a>
+
+                <p class="img__description"></p>
+
+                <p class="about-position-marketing">
+                    Marketing
+                </p>
+                <p class="about-text">
+                    Raaghav Om
+                </p>
+            </div>
+            <div id="person8" class="circle">
+                <a href="arshrajsingh.html"><button class="images2"><img id="image8" class="images" src="ArshrajSingh.webp"></button></a>
+
+                <p class="img__description"></p>
+
+                <p class="about-position-marketing">
+                    Marketing
+                </p>
+                <p class="about-text">
+                    Arshraj Singh
+                </p>
+            </div>
+            <div id="person9" class="circle">
+                <a href="pavannimmagadda.html"><button class="images2"><img id="image9" class="images" src="PavaniNimmagadda.webp"></button></a>
+                <p class="img__description"></p>
+                
+                <p class="about-position-marketing">
+                    Marketing
+                </p>
+                <p class="about-text">
+                    Pavani Nimmagadda
+                </p>
+            </div>
+            <div id="person12" class="circle">
+                <a href="amanbollam.html"><button class="images2"><img id="image12" class="images" src="amanpic2.png"></button></a>
+
+                <p class="img__description"></p>
+
+                <p class="about-position-marketing">
+                    Marketing
+                </p>
+                <p class="about-text">
+                    Aman Bollam
+                </p>
+            </div>
+        </div>
+
+        <div id="Web" class="tabcontent">
+                       <div id="person16" class="circle">
+                <a href="rishi.html"><button class="images2"><img id="image14" class="images" src="rishi.png"></button></a>
+               
+                <p class="img__description">
+                    Tel: 123-456-7890<br>info@mysite.com</p>
+
+                <p class="about-position-founders">
+                Web Developer    
+                </p>
+                <p class="about-text">
+                Rishi Mulchandani
+                </p>
+            </div>
+             <div id="person14" class="circle">
+                <a href="suvrath.html"><button class="images2"><img id="image14" class="images" src="suv2.png"></button></a>
+               
+                <p class="img__description">
+                    Tel: 123-456-7890<br>info@mysite.com</p>
+
+                <p class="about-position-founders">
+                Web Developer    
+                </p>
+                <p class="about-text">
+               Suvrath Chivukula 
+                </p>
+            </div>
+             
+             <div id="person13" class="circle">
+                <a href="bansi.html"><button class="images2"><img id="image13" class="images" src="banspic5.jpg"></button></a>
+               
+                <p class="img__description">
+                    Tel: 123-456-7890<br>info@mysite.com</p>
+
+                <p class="about-position-founders">
+                Web Developer    
+                </p>
+                <p class="about-text">
+               Bansi Gogineni  
+                </p>
+            </div>
+             <div id="person15" class="circle">
+                <a href="shaunak.html"><button class="images2"><img id="image15" class="images" src="shaunak.png"></button></a>
+               
+                <p class="img__description">
+                    Tel: 123-456-7890<br>info@mysite.com</p>
+
+                <p class="about-position-founders">
+                Web Developer    
+                </p>
+                <p class="about-text">
+               Shaunak Marathe
+                </p>
+            </div>
+        </div>
+
+    </div>
+
 </center>
 
+<footer class="footer-distributed">
 
+			<div class="footer-left">
+				<h3>Leaders of Economics and Finance in America</h3>
+
+				<p class="footer-links">
+					<a href="index.html">Home</a>
+					|
+					<a href="college-competitions.html">Competitions</a>
+					|
+					<a href="create.html">Start a Chapter</a>
+					|
+					<a href="team.html">Team</a>
+          |
+					<a href="contact.php">Contact</a>
+				</p>
+        <br>
+        <div>
+          <p id="email">
+					<i class="fa fa-envelope" style="color: #f0f0f0;"></i>
+					<a href ="mailto:lefaorganization@gmail.com" target="_blank">lefaorganization@gmail.com</a></p>
+				</div>
+        <br>
+        <br>
+<code>
+				<p class="footer-company-name">© 2021 LEFA</p>
+        </code>
+			</div>
+
+			<div class="footer-center">
+
+
+			
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>LEFA</span>
+					Ellicott City, Maryland, United States</p>
+				<div class="footer-icons">
+					<a href="https://www.instagram.com/lefaorg/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/lefa-organization-51aa60210/" target="_blank"><i class="fab fa-linkedin"></i></a>
+					<a href="https://www.youtube.com/channel/UCRXNzEPsJE0PNzJpbp0h7VA" target="_blank"><i class="fab fa-youtube"></i></a>
+        	<a href="https://www.facebook.com/LEFA-Organization-103955925208987" target="_blank"><i class="fab fa-facebook"></i></a>
+  			</div>
+			</div>
+		</footer>
 
 </body>
+<script src="nav.js"></script>
   <script src="script.js"></script>
+  <script>
+    function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            var founder = document.getElementsByClassName("tablinks");
+            founder[0].className += " active";
+            
+
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+
+             if (founder[0].classList.contains("active")) {
+            founder[0].className = founder[0].className.replace(" active", "");
+             }
+            
+          
+        }
+         
+ 
+
+        openCity(event, 'Founders');
+       
+      
+    </script>
 </html>

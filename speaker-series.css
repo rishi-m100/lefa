@@ -1,0 +1,205 @@
+* {
+  font-family: "poppins"
+}
+
+#body-stuff{
+margin-top:75px;
+}
+
+#filter{
+  float: left;
+  min-height: 700px;
+  max-width: 600px;
+  background-color: rgba(26, 33, 54, 0.7);
+  padding-top: 10%;
+  padding-right: 5%;
+  padding-left: 15%;
+  color:white;
+}
+
+@media only screen and (max-width: 900px) {
+  #filter{
+    padding-top: 240px;
+  }
+}
+
+
+
+#filter-title{
+  margin-bottom:50px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("https://www.allbusinessideas.net/wp-content/uploads/ngg_featured/Things-you-shouldnt-forget-about-next-time.jpg");
+
+  /* Set a specific height */
+  min-height: 700px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.parallax2{
+
+
+  /* The image used */
+  background-image: url("http://mysaviourindia.org/img/home/learn/High-School.jpg");
+
+  /* Set a specific height */
+  min-height: 700px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title{
+  margin-top:70px;
+ margin-left: 75px;
+  font-size:30px;
+  line-height:30px;
+  font-weight:bold;
+  margin-bottom:30px;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ color:#2b5a4e;
+}
+.text{
+  
+  margin-left:75px;
+  font-size:20px;
+  line-height:30px;
+  font-family: poppins;
+  margin-right:150px;
+}
+.title-two{
+  margin-top:50px;
+ margin-left: 75px;
+  font-size:30px;
+  line-height:30px;
+  font-weight:bold;
+  
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ color:#2b5a4e;
+}
+
+
+
+
+.title-three{
+
+ margin-left: 75px;
+  font-size:30px;
+  
+  font-weight:bold;
+  
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ color:#2b5a4e;
+}
+
+@media only screen and (max-width: 550px){
+
+  .title{
+    margin:25px;
+    text-align: center;
+  }
+.title-two{
+margin-left:0px;
+margin: 30px;
+text-align: center;
+}
+.text{
+  text-align:center;
+}
+
+.title-three{
+  margin-left:0px;
+  margin:30px;
+  text-align: center;
+}
+
+}
+
+
+.bullets{
+  list-style-type: square;
+  font-family: poppins;
+ font-size:25px;
+}
+.bullet-div{
+  margin-left:125px;
+  margin-top:20px;
+  margin-right:50px;
+}
+
+
+
+.bullet-info{
+  margin-top:10px;
+  margin-bottom:20px;
+  width:500px;
+  font-family: poppins;
+  font-size:18px;
+}
+.bullets::marker{ 
+  color:blanchedalmond;
+  font-size: 30px; 
+  }
+
+
+.bullets2{
+font-family: poppins;
+ font-size:25px;
+}
+
+.bullets2::marker{ 
+  color:blanchedalmond;
+  font-size: 30px; 
+  }
+
+
+@media only screen and (max-width: 990px) {
+  .bullet-div{
+    margin-left: 16vw;
+    margin-top: 20px;
+    margin-right: 23px;
+  }
+  .bullet-info{
+    width:60vw;
+    margin-right:100px;
+  }
+  
+  .text{
+    margin-right: 75px;
+  }
+  .text p{
+    font-size: 20px;
+  }
+  
+}
+
+@media only screen and (max-width:475px) {
+  .text p{
+    font-size: 15px;
+  }
+   .text{
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+
+
+
+
+#title-two:hover{
+  cursor:pointer;
+}
+
+
+
+

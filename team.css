@@ -38,17 +38,101 @@ nav {
  margin-bottom:-.3%;
 }
 
-.circle{
+body {
+            font-family: "poppins";
+        }
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: none;
+
+
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+
+            background-color: gray;
+            color: white;
+        }
+
+       
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #37504a;
+            color:white;
+        }
+
+        #founders_tab.active{
+          background-color: #373d50;
+        }
+
+        #directors_tab.active{
+          background-color: #325d53;
+        }
+
+        #chapter_tab.active{
+          background-color: #296a5b;
+        }
+
+        #marketing_tab.active{
+          background-color: #1c7661;
+        }
+
+        #web_tab.active{
+          background-color: #3a5037;
+        }
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 20px 24px;
+
+            border-top: none;
+        }
+
+        #total {
+         
+            border: 1px solid #ccc;
+            height: auto;
+            width: 90%;
+            margin-bottom:7%;
+
+
+        }
+
+
+
+        .circle{
   height: 250px;
   width: 250px;
-  background-color: #181860;
-  border-radius: 50%;
   display: inline-block;
   margin-left:9%;
+  
+}
+
+.images:hover{
+    box-shadow: 0 0 25px 0 black;
+    transition: .4s;
+    transform: 
 }
 
 #team{
   font-size: 200%;
+  padding: 2%;
 }
 #people{
   margin: 5%;
@@ -57,11 +141,22 @@ nav {
   height: 1100px;
 }
 
-.images{
+.images, .images2{
   display: block;
   width: 100%;
   border-radius: 25%;
   height: auto;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  transition: .4s;
+}
+
+#image7, #image6, #image8, #image12{
+height: 285px;
+}
+#image15{
+  height: 285px;
 }
 
 .img__description {
@@ -82,3 +177,93 @@ nav {
   transition: opacity .2s, visibility .2s;
 }
 
+.about-position{
+  font-weight: 1000;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #37504a;
+  text-decoration-thickness: 3.5px;
+}
+
+.about-position-founders{
+font-weight: 1000;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 3.5px;
+  text-decoration-color: #373d50;
+
+}
+
+.about-position-directors{
+font-weight: 1000;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 3.5px;
+  text-decoration-color: #325d53;
+
+}
+
+.about-position-chapter{
+font-weight: 1000;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 3.5px;
+  text-decoration-color: #296a5b;
+
+}
+
+.about-position-marketing{
+font-weight: 1000;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 3.5px;
+  text-decoration-color: #1c7661;
+
+}
+
+.about-position-web{
+font-weight: 1000;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 3.5px;
+  text-decoration-color: #3a5037;
+
+}
+
+.about-text{
+  text-align: center;
+}
+
+#email a{
+  	color:  #f0f0f0;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 450px) {
+
+  .images2{
+    width: 70%;
+  }
+  #image6, #image7, #image8, #image12{
+    height: 200px;
+  }
+  #image15{
+    height: 231px;
+  }
+  .circle{
+    margin-left:0%;
+  }
+}
+
+
+@media only screen and (max-width: 375px) {
+
+  
+  h1{
+    font-size: 17.5vw;
+  }
+
+  #total p{
+    width: 80%;
+  }
+}

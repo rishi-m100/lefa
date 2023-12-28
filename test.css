@@ -19,12 +19,14 @@ body {
 
 nav {
     display: flex;
+    top:0%;
     justify-content: space-around;
     align-items: center;
     min-height: 12vh;
     background-color: white;
     font-family: "poppins";
     width:100%;
+    z-index: 1;
     
 }
 .nav-logo{
@@ -41,21 +43,26 @@ nav {
     width: 100%;
     
 }
-
+/*
 .menu-title{
-  cursor: default;
+  background-color:red;
 }
-
-.normal-nav{
-  cursor:pointer;
-}
+*/
 .menu:focus .ani-menu,
 .menu:focus-within .ani-menu,
 .menu:hover .ani-menu{
     display: block;
     opacity: 1;
     z-index: 1;
-   
+   transition-delay:0s, 0s, 0.3s;
+  
+    transform: translateY(0.1em);
+    
+    transition: all 0.3s ease 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    -webkit-transition: all 0.3s ease 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    -moz-transition: all 0.3s ease 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    -ms-transition: all 0.3s ease 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    -o-transition: all 0.3s ease 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 }
 
 nav a {
@@ -95,7 +102,10 @@ nav ul, nav ul li {
 
 nav > ul {  
     text-align: center;
-  }
+   
+
+    
+}
 
 nav > ul > li {
     display: inline-block;
@@ -126,6 +136,14 @@ nav > ul > li:first-child {
 }
 
 
+@media screen and (min-width: 950px) and (max-width: 1011px){
+    .menu{
+        font-size: 1.4vw;
+    }
+
+
+}
+
 @media screen and (min-width: 950px) {
     .menu{
         position:relative;
@@ -152,7 +170,7 @@ nav > ul > li:first-child {
         right: 0px;
         height: 92vh;
         top:8vh;
-        background-color: #f0f0f0;
+        background-color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -175,6 +193,11 @@ nav > ul > li:first-child {
         display: block;
         margin-right: -17.5%;
     }
+}
+@media only screen and (max-width: 351px){
+  .ani-menu a{
+    padding: 15px 20px;
+  }
 }
 
 
@@ -202,4 +225,5 @@ nav > ul > li:first-child {
 .cool .line3{
     transform: rotate(45deg) translate(-5px,-6px);
 }
+
 
