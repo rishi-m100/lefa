@@ -10,4 +10,4 @@ America.
 
 ## Hosted Version
 
-Check out the hosted version of the project [here](https://lefaofficial.org/)
+Check out the hosted version of the project [here](https://lefaofficial.org/) or alternatively [here](https://rishi-m100.github.io/lefa/)
