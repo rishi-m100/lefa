@@ -1,6 +1,8 @@
-Leaders of Economics & Finance in America Website | HTML/CSS, JavaScript
+Leaders of Economics & Finance in America Website 
 
-# Leaders of Economics & Finance in America Website | HTML/CSS, JavaScript
+# Leaders of Economics & Finance in America Website
+
+Leaders of Economics & Finance in America Website | HTML/CSS, JavaScript
 
 • Created a website for a nonprofit organization with chapters across the country that promotes financial literacy in
 America.
